@@ -71,5 +71,21 @@ public class ConsumerExample {
                 System.out.println("Feeding the animal: " + animal);
             }
         });
+
+        doSomeOperation(animalConsumer);
+    }
+
+    public static void doSomeOperation(Consumer<Animal> animalConsumer) {
+        List<Animal> animals = Arrays.asList(new Animal("Cat", "black"), new Animal("Dog", "brown"));
+
+        Localization.printLocalized(
+                "Перед выполнением операции",
+                "Before the operation");
+
+        animals.forEach(animalConsumer);
+
+        Localization.printLocalized(
+                "После выполнения операции",
+                "After the operation");
     }
 }
