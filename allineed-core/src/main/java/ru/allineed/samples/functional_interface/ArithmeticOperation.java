@@ -18,7 +18,7 @@
 package ru.allineed.samples.functional_interface;
 
 /**
- * [RU] Простой функциональный интерфейс, выполняющий некоторые арифметические операции
+ * [RU] Простой функциональный интерфейс, выполняющий некоторую арифметическую операцию
  * между двумя операндами<br/>
  * [EN] A simple functional interface that performs some arithmetic operation between two
  * operands
@@ -31,7 +31,7 @@ public interface ArithmeticOperation<T> {
      * [RU] Выполняет заданную операцию над двумя операндами<br/>
      * [EN] Performs the specified operation between two operands
      * @param first [RU] Первый операнд; [EN] First operand
-     * @param second [RU] Второй операнд; [EN] Второй операнд
+     * @param second [RU] Второй операнд; [EN] Second operand
      * @return [RU] Возвращает результат операции того же типа, что и сами операнды; [EN] Returns
      * the result of operation that has the same data type as the operands
      */
