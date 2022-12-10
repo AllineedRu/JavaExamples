@@ -15,6 +15,7 @@
 package ru.allineed.samples.main;
 
 import ru.allineed.samples.arrays.ArraysExample;
+import ru.allineed.samples.comparable.ComparableGiftBoxExample;
 import ru.allineed.samples.consumer_interface.ConsumerExample;
 import ru.allineed.samples.helloworld.MySampleApplication;
 import ru.allineed.samples.io.ReadingFileExample;
@@ -51,5 +52,11 @@ public class AllExamplesRunner {
         // [EN] Runs example from the article "Reading env properties in Java using System.getProperties()"
         // [EN] Link to the article: https://allineed.ru/development/java-development/8-java-system-properties
         SystemPropertiesExample.main(args);
+
+        // [RU] Запускает пример из статьи "Интерфейс Comparable в Java. Сравниваем объекты"
+        // [RU] Ссылка на статью: https://allineed.ru/development/java-development/64-java-comparable-interface
+        // [EN] Runs example from the article "Интерфейс Comparable в Java. Сравниваем объекты"
+        // [EN] Link to the article: https://allineed.ru/development/java-development/64-java-comparable-interface
+        ComparableGiftBoxExample.main(args);
     }
 }
