@@ -17,6 +17,7 @@ package ru.allineed.samples.main;
 import ru.allineed.samples.arrays.ArraysExample;
 import ru.allineed.samples.comparable.ComparableGiftBoxExample;
 import ru.allineed.samples.consumer_interface.ConsumerExample;
+import ru.allineed.samples.function_interface.FunctionInterfaceExample;
 import ru.allineed.samples.helloworld.MySampleApplication;
 import ru.allineed.samples.io.ReadingFileExample;
 import ru.allineed.samples.properties.SystemPropertiesExample;
@@ -58,5 +59,11 @@ public class AllExamplesRunner {
         // [EN] Runs example from the article "Comparable interface in Java. Comparing objects"
         // [EN] Link to the article: https://allineed.ru/development/java-development/64-java-comparable-interface
         ComparableGiftBoxExample.main(args);
+
+        // [RU] Запускает пример из статьи "Функциональный интерфейс Function в Java. Методы apply, andThen, compose и identity"
+        // [RU] Ссылка на статью: https://allineed.ru/development/java-development/65-java-function-functional-interface
+        // [EN] Runs example from the article "Functional interface Function in Java. Methods apply, andThen, compose and identity"
+        // [EN] Link to the article: https://allineed.ru/development/java-development/65-java-function-functional-interface
+        FunctionInterfaceExample.main(args);
     }
 }

@@ -31,4 +31,8 @@ public class Localization {
             System.out.println(enMessage);
         }
     }
+
+    public static String getLocalized(String ruMessage, String enMessage) {
+        return RU.equals(EXAMPLES_DEFAULT_LOCALE) ? ruMessage : enMessage;
+    }
 }
