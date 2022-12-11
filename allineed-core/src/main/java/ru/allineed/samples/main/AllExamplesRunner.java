@@ -55,7 +55,7 @@ public class AllExamplesRunner {
 
         // [RU] Запускает пример из статьи "Интерфейс Comparable в Java. Сравниваем объекты"
         // [RU] Ссылка на статью: https://allineed.ru/development/java-development/64-java-comparable-interface
-        // [EN] Runs example from the article "Интерфейс Comparable в Java. Сравниваем объекты"
+        // [EN] Runs example from the article "Comparable interface in Java. Comparing objects"
         // [EN] Link to the article: https://allineed.ru/development/java-development/64-java-comparable-interface
         ComparableGiftBoxExample.main(args);
     }

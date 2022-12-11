@@ -108,10 +108,10 @@ public class GiftBox implements Comparable<GiftBox> {
      * [EN] An overridden method of {@link Comparable} interface for comparing two boxes - the current box
      * instance and another that is passed in 'that' input parameter
      * @param that [RU] объект коробки для сравнения с текущим; [EN] the object to be compared with the current instance
-     * @return [RU] отрицательное значение -1, если текущая коробка больше переданной в параметре 'that',
-     * 0, если текущая коробка равна переданной в параметре 'that', 1, если текущая коробка меньше переданной в
-     * параметре 'that'; [EN] a negative integer value -1 in case current box is greater than the box in the parameter
-     * 'that', 0 in case current box is equal to 'that' box, 1 in case current box is less than 'that' box.
+     * @return [RU] отрицательное значение -1, если текущая коробка меньше переданной в параметре 'that',
+     * 0, если текущая коробка равна переданной в параметре 'that', 1, если текущая коробка больше переданной в
+     * параметре 'that'; [EN] a negative integer value -1 in case current box is less than the box in the parameter
+     * 'that', 0 in case current box is equal to 'that' box, 1 in case current box is bigger than 'that' box.
      * @throws NullPointerException [RU] если {@code that} равен null; [EN] if {@code that} is null
      */
     @Override
