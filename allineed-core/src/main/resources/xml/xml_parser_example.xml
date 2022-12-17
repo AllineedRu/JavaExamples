@@ -1,0 +1,50 @@
+<!--
+[RU] Тестовый XML-файл для примера из статьи
+https://allineed.ru/development/java-development/66-java-reading-xml-via-sax-parser
+
+[EN] A sample XML file for the example from the article
+https://allineed.ru/development/java-development/66-java-reading-xml-via-sax-parser
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with
+this program. If not, see <http://www.gnu.org/licenses/>.
+-->
+<book_library>
+    <books>
+        <book>
+            <author_name>Лев Николаевич Толстой</author_name>
+            <title>Война и мир</title>
+            <date_published>1869</date_published>
+        </book>
+        <book>
+            <author_name>Фёдор Михайлович Достоевский</author_name>
+            <title>Преступление и наказание</title>
+            <date_published>1866</date_published>
+        </book>
+        <book>
+            <author_name>Александр Сергеевич Пушкин</author_name>
+            <title>Евгений Онегин</title>
+            <date_published>1833</date_published>
+        </book>
+    </books>
+    <authors>
+        <author>
+            <name>Лев Николаевич Толстой</name>
+            <date_born>1828</date_born>
+        </author>
+        <author>
+            <name>Александр Сергеевич Пушкин</name>
+            <date_born>1799</date_born>
+        </author>
+        <author>
+            <name>Фёдор Михайлович Достоевский</name>
+            <date_born>1821</date_born>
+        </author>
+    </authors>
+</book_library>

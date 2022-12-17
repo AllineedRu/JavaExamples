@@ -1,9 +1,9 @@
 /**
  * [RU] Класс с примером Java кода из статьи
- * https://allineed.ru/development/java-development/5-java-first-program
+ * https://allineed.ru/development/java-development/66-java-reading-xml-via-sax-parser
  *
  * [EN] The class with sample Java code from the article
- * https://allineed.ru/development/java-development/5-java-first-program
+ * https://allineed.ru/development/java-development/66-java-reading-xml-via-sax-parser
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -15,17 +15,25 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package ru.allineed.samples.helloworld;
+package ru.allineed.samples.xml;
 
-import ru.allineed.samples.common.OutputUtils;
+public class Author {
+    private String name;
+    private String dateBorn;
 
-public class MySampleApplication {
-    public static void main(String[] args) {
-        OutputUtils.printSampleTitle(
-                "Первая программа на Java",
-                "Your first application in Java",
-                "https://allineed.ru/development/java-development/5-java-first-program");
+    public void setName(String name) {
+        this.name = name;
+    }
 
-        System.out.println("Hello, World!");
+    public void setDateBorn(String dateBorn) {
+        this.dateBorn = dateBorn;
+    }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "name='" + name + '\'' +
+                ", dateBorn='" + dateBorn + '\'' +
+                '}';
     }
 }

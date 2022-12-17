@@ -17,6 +17,7 @@
  */
 package ru.allineed.samples.function_interface;
 
+import ru.allineed.samples.common.OutputUtils;
 import ru.allineed.samples.config.Localization;
 
 import java.util.function.Function;
@@ -24,6 +25,11 @@ import java.util.function.Function;
 public class FunctionInterfaceExample {
 
     public static void main(String[] args) {
+        OutputUtils.printSampleTitle(
+                "Функциональный интерфейс Function в Java. Методы apply, andThen, compose и identity",
+                "Functional interface Function in Java. Methods apply, andThen, compose and identity",
+                "https://allineed.ru/development/java-development/65-java-function-functional-interface");
+
         Function<Integer, Double> funcLambda = (Integer intVal) -> {
             if (intVal == null) {
                 return null;

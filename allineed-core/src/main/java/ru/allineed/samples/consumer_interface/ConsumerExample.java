@@ -17,6 +17,7 @@
  */
 package ru.allineed.samples.consumer_interface;
 
+import ru.allineed.samples.common.OutputUtils;
 import ru.allineed.samples.config.Localization;
 
 import java.util.Arrays;
@@ -43,6 +44,11 @@ public class ConsumerExample {
     }
 
     public static void main(String[] args) {
+        OutputUtils.printSampleTitle(
+                "Функциональный интерфейс Consumer в Java",
+                "Consumer functional interface in Java",
+                "https://allineed.ru/development/java-development/12-consumer-java-functional-interface");
+
         List<Animal> animals = Arrays.asList(new Animal("Cat", "black"), new Animal("Dog", "brown"));
         Consumer<Animal> animalConsumer = animal -> System.out.println("Feeding the animal: " + animal);
 

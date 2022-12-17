@@ -18,9 +18,11 @@ import ru.allineed.samples.arrays.ArraysExample;
 import ru.allineed.samples.comparable.ComparableGiftBoxExample;
 import ru.allineed.samples.consumer_interface.ConsumerExample;
 import ru.allineed.samples.function_interface.FunctionInterfaceExample;
+import ru.allineed.samples.functional_interface.ArithmeticOperationExample;
 import ru.allineed.samples.helloworld.MySampleApplication;
 import ru.allineed.samples.io.ReadingFileExample;
 import ru.allineed.samples.properties.SystemPropertiesExample;
+import ru.allineed.samples.xml.XmlParserExample;
 
 public class AllExamplesRunner {
     public static void main(String[] args) {
@@ -48,6 +50,12 @@ public class AllExamplesRunner {
         // [EN] Link to the article: https://allineed.ru/development/java-development/22-java-reading-data-from-file
         ReadingFileExample.main(args);
 
+        // [RU] Запускает пример из статьи "Пример функционального интерфейса на Java"
+        // [RU] Ссылка на статью: https://allineed.ru/development/java-development/13-java-functional-interface-example
+        // [EN] Runs example from the article "An example of functional interface in Java"
+        // [EN] Link to the article: https://allineed.ru/development/java-development/13-java-functional-interface-example
+        ArithmeticOperationExample.main(args);
+
         // [RU] Запускает пример из статьи "Читаем свойства окружения в Java с помощью System.getProperties()"
         // [RU] Ссылка на статью: https://allineed.ru/development/java-development/8-java-system-properties
         // [EN] Runs example from the article "Reading env properties in Java using System.getProperties()"
@@ -65,5 +73,11 @@ public class AllExamplesRunner {
         // [EN] Runs example from the article "Functional interface Function in Java. Methods apply, andThen, compose and identity"
         // [EN] Link to the article: https://allineed.ru/development/java-development/65-java-function-functional-interface
         FunctionInterfaceExample.main(args);
+
+        // [RU] Запускает пример из статьи "Читаем на Java XML-файл с помощью SAX-парсера"
+        // [RU] Ссылка на статью: https://allineed.ru/development/java-development/66-java-reading-xml-via-sax-parser
+        // [EN] Runs example from the article "Reading an XML file with Java using SAX parser"
+        // [EN] Link to the article: https://allineed.ru/development/java-development/66-java-reading-xml-via-sax-parser
+        XmlParserExample.main(args);
     }
 }

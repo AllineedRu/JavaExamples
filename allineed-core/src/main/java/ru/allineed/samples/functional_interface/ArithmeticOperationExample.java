@@ -17,21 +17,28 @@
  */
 package ru.allineed.samples.functional_interface;
 
+import ru.allineed.samples.common.OutputUtils;
+
 /**
  * [RU] Основной исполняемый класс для статьи<br/>
  * [EN] The main executable класс for the article<br/>
  */
 public class ArithmeticOperationExample {
     public static void main(String[] args) {
+        OutputUtils.printSampleTitle(
+                "Пример функционального интерфейса на Java",
+                "An example of functional interface in Java",
+                "https://allineed.ru/development/java-development/13-java-functional-interface-example");
+
         printDoubleOperationsDemo("Demo with Double operations");
         printIntegerOperationsDemo("Demo with Integer operations");
         printNumericOperationsDemo("Demo with mixed operations");
     }
 
     public static void printHeaderText(String headerText) {
-        System.out.println("=======================================");
+        System.out.println("-----------------------------------------------");
         System.out.println(headerText);
-        System.out.println("=======================================");
+        System.out.println("-----------------------------------------------");
     }
 
     public static void printNumericOperationsDemo(String headerText) {

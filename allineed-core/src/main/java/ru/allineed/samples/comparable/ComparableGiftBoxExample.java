@@ -17,6 +17,7 @@
  */
 package ru.allineed.samples.comparable;
 
+import ru.allineed.samples.common.OutputUtils;
 import ru.allineed.samples.config.Localization;
 
 import java.util.Arrays;
@@ -25,6 +26,11 @@ import java.util.List;
 
 public class ComparableGiftBoxExample {
     public static void main(String[] args) {
+        OutputUtils.printSampleTitle(
+                "Интерфейс Comparable в Java. Сравниваем объекты",
+                "Comparable interface in Java. Comparing objects",
+                "https://allineed.ru/development/java-development/64-java-comparable-interface");
+
         // [RU] создаём экземпляр красной коробки
         // [EN] create an instance of the red box
         GiftBox redBox = new GiftBox("Red Box", 100, 100, 100);
@@ -74,22 +80,26 @@ public class ComparableGiftBoxExample {
 
         GiftBox emptyBox = null;
         // [RU] Здесь при вызове метода compareTo() произойдет выброс исключения NullPointerException
+        // [RU] Попробуйте это, раскомментировав блок кода ниже
+
         // [EN] Here we'll get a NullPointerException thrown when calling compareTo() method
-        if (smallYellowBox.compareTo(emptyBox) == 0) {
-            // [RU] В этот код мы никогда не попадём из-за NullPointerException...
-            // [EN] This code will never be executed due to NullPointerException...
-            Localization.printLocalized(
-                    String.format("Объем двух коробок одинаковый: %s (%,d) и %s (%,d)",
-                            smallYellowBox.getName(),
-                            smallYellowBox.getVolume(),
-                            emptyBox.getName(),
-                            emptyBox.getVolume()),
-                    String.format("The volume of these two boxes is equal: %s (%,d) и %s (%,d)",
-                            smallYellowBox.getName(),
-                            smallYellowBox.getVolume(),
-                            emptyBox.getName(),
-                            emptyBox.getVolume())
-            );
-        }
+        // [EN] Try it and uncomment the code block below
+
+//        if (smallYellowBox.compareTo(emptyBox) == 0) {
+//            // [RU] В этот код мы никогда не попадём из-за NullPointerException...
+//            // [EN] This code will never be executed due to NullPointerException...
+//            Localization.printLocalized(
+//                    String.format("Объем двух коробок одинаковый: %s (%,d) и %s (%,d)",
+//                            smallYellowBox.getName(),
+//                            smallYellowBox.getVolume(),
+//                            emptyBox.getName(),
+//                            emptyBox.getVolume()),
+//                    String.format("The volume of these two boxes is equal: %s (%,d) и %s (%,d)",
+//                            smallYellowBox.getName(),
+//                            smallYellowBox.getVolume(),
+//                            emptyBox.getName(),
+//                            emptyBox.getVolume())
+//            );
+//        }
     }
 }

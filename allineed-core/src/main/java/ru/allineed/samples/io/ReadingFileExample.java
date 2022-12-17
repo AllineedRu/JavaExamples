@@ -17,10 +17,17 @@
  */
 package ru.allineed.samples.io;
 
+import ru.allineed.samples.common.OutputUtils;
+
 public class ReadingFileExample {
-    public static final String PATH_TO_FILE = "C:\\Users\\user\\Documents\\mydata.txt";
+    public static final String PATH_TO_FILE = System.getProperty("user.dir") + "/allineed-core/src/main/resources/io/mydata.txt";
 
     public static void main(String[] args) {
+        OutputUtils.printSampleTitle(
+                "Читаем данные из файла с помощью Java",
+                "Reading data from file in Java",
+                "https://allineed.ru/development/java-development/22-java-reading-data-from-file");
+
         BufferedReaderWithCycle bufferedReaderWithCycle = new BufferedReaderWithCycle();
         bufferedReaderWithCycle.readFile(PATH_TO_FILE);
 

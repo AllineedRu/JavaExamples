@@ -17,8 +17,15 @@
  */
 package ru.allineed.samples.arrays;
 
+import ru.allineed.samples.common.OutputUtils;
+
 public class ArraysExample {
     public static void main(String[] args) {
+        OutputUtils.printSampleTitle(
+                "Работа с массивами в Java",
+                "Working with arrays in Java",
+                "https://allineed.ru/development/java-development/14-java-arrays");
+
         int[] a1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int a2[] = {-1, 22, 37};
 
@@ -68,5 +75,6 @@ public class ArraysExample {
                 System.out.print(b2_cell_value + " ");
             }
         }
+        System.out.println();
     }
 }

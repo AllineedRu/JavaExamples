@@ -17,11 +17,18 @@
  */
 package ru.allineed.samples.properties;
 
+import ru.allineed.samples.common.OutputUtils;
+
 import java.util.Properties;
 
 public class SystemPropertiesExample {
     public static void main( String[] args )
     {
+        OutputUtils.printSampleTitle(
+                "Читаем свойства окружения в Java с помощью System.getProperties()",
+                "Reading env properties in Java using System.getProperties()",
+                "https://allineed.ru/development/java-development/8-java-system-properties");
+
         Properties properties = System.getProperties();
         properties.stringPropertyNames().forEach(
                 pName -> System.out.printf("System Property: { name = \"%s\", value = \"%s\" }%n", pName, properties.getProperty(pName))

@@ -1,5 +1,5 @@
 /**
- * [RU] Класс для поддержкой локализации примеров кода на русский и английский языки
+ * [RU] Класс для поддержки локализации примеров кода на русский и английский языки
  *
  * [EN] The class contains Russian and English language support for code examples
  *
@@ -22,6 +22,10 @@ public class Localization {
     // [RU] Поменяйте здесь значение RU на EN, если вывод всех примеров нужен на английском языке:
     // [EN] Change RU to EN here if you need an output of all the examples in English:
     public static final String EXAMPLES_DEFAULT_LOCALE = RU;
+
+    public static boolean isRUDefaultLocale() {
+        return EXAMPLES_DEFAULT_LOCALE == RU;
+    }
 
     public static void printLocalized(String ruMessage, String enMessage) {
         System.out.println();
