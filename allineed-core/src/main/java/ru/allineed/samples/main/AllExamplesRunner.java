@@ -17,6 +17,7 @@ package ru.allineed.samples.main;
 import ru.allineed.samples.arrays.ArraysExample;
 import ru.allineed.samples.comparable.ComparableGiftBoxExample;
 import ru.allineed.samples.consumer_interface.ConsumerExample;
+import ru.allineed.samples.files.max_file_info.MaxFileInfoExample;
 import ru.allineed.samples.function_interface.FunctionInterfaceExample;
 import ru.allineed.samples.functional_interface.ArithmeticOperationExample;
 import ru.allineed.samples.helloworld.MySampleApplication;
@@ -79,5 +80,11 @@ public class AllExamplesRunner {
         // [EN] Runs example from the article "Reading an XML file with Java using SAX parser"
         // [EN] Link to the article: https://allineed.ru/development/java-development/66-java-reading-xml-via-sax-parser
         XmlParserExample.main(args);
+
+        // [RU] Запускает пример из статьи "Как найти самый большой файл в каталоге при помощи Java"
+        // [RU] Ссылка на статью: https://allineed.ru/development/java-development/67-java-how-to-find-largest-file
+        // [EN] Runs example from the article "How to find the largest file in the directory using Java"
+        // [EN] Link to the article: https://allineed.ru/development/java-development/67-java-how-to-find-largest-file
+        MaxFileInfoExample.main(args);
     }
 }
