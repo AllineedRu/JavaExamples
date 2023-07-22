@@ -31,11 +31,12 @@ public class RunnableExample {
 //        (new Thread(new SomeRunnable("C"))).start();
 //        (new Thread(new SomeRunnable("D"))).start();
 
-        // Вариант с указанием явного приоритета для каждого потока:
-        Thread threadA = (new Thread(new SomeRunnable("A")));
-        Thread threadB = (new Thread(new SomeRunnable("B")));
-        Thread threadC = (new Thread(new SomeRunnable("C")));
-        Thread threadD = (new Thread(new SomeRunnable("D")));
+        // [RU] Вариант с указанием явного приоритета для каждого потока:
+        // [EN] Example with explicit setting of priority for each thread:
+        Thread threadA = new Thread(new SomeRunnable("A"));
+        Thread threadB = new Thread(new SomeRunnable("B"));
+        Thread threadC = new Thread(new SomeRunnable("C"));
+        Thread threadD = new Thread(new SomeRunnable("D"));
 
 
         threadA.setPriority(Thread.MAX_PRIORITY);
