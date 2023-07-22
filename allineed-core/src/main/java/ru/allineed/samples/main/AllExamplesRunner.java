@@ -23,6 +23,8 @@ import ru.allineed.samples.functional_interface.ArithmeticOperationExample;
 import ru.allineed.samples.helloworld.MySampleApplication;
 import ru.allineed.samples.io.ReadingFileExample;
 import ru.allineed.samples.properties.SystemPropertiesExample;
+import ru.allineed.samples.threads.runnable.RunnableExample;
+import ru.allineed.samples.threads.thread.ThreadExample;
 import ru.allineed.samples.xml.XmlParserExample;
 
 public class AllExamplesRunner {
@@ -86,5 +88,17 @@ public class AllExamplesRunner {
         // [EN] Runs example from the article "How to find the largest file in the directory using Java"
         // [EN] Link to the article: https://allineed.ru/development/java-development/67-java-how-to-find-largest-file
         MaxFileInfoExample.main(args);
+
+        // [RU] Запускает пример из статьи "Запускаем потоки в Java"
+        // [RU] Ссылка на статью: https://allineed.ru/development/java-development/83-java-starting-threads
+        // [EN] Runs example from the article "Running threads in Java"
+        // [EN] Link to the article: https://allineed.ru/development/java-development/83-java-starting-threads
+        RunnableExample.main(args);
+
+        // [RU] Запускает пример из статьи "Запускаем потоки в Java"
+        // [RU] Ссылка на статью: https://allineed.ru/development/java-development/83-java-starting-threads
+        // [EN] Runs example from the article "Running threads in Java"
+        // [EN] Link to the article: https://allineed.ru/development/java-development/83-java-starting-threads
+        ThreadExample.main(args);
     }
 }
