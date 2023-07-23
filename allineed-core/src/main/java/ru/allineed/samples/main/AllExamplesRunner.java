@@ -20,6 +20,7 @@ import ru.allineed.samples.consumer_interface.ConsumerExample;
 import ru.allineed.samples.files.max_file_info.MaxFileInfoExample;
 import ru.allineed.samples.function_interface.FunctionInterfaceExample;
 import ru.allineed.samples.functional_interface.ArithmeticOperationExample;
+import ru.allineed.samples.functional_interface.unaryoperator.UnaryOperatorExample;
 import ru.allineed.samples.helloworld.MySampleApplication;
 import ru.allineed.samples.io.ReadingFileExample;
 import ru.allineed.samples.properties.SystemPropertiesExample;
@@ -100,5 +101,11 @@ public class AllExamplesRunner {
         // [EN] Runs example from the article "Running threads in Java"
         // [EN] Link to the article: https://allineed.ru/development/java-development/83-java-starting-threads
         ThreadExample.main(args);
+
+        // [RU] Запускает пример из статьи "Запускаем потоки в Java"
+        // [RU] Ссылка на статью: https://allineed.ru/development/java-development/84-java-unaryoperator
+        // [EN] Runs example from the article "Running threads in Java"
+        // [EN] Link to the article: https://allineed.ru/development/java-development/84-java-unaryoperator
+        UnaryOperatorExample.main(args);
     }
 }
